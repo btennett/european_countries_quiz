@@ -20,6 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=JetBrains+Mono:wght@500&display=swap">
@@ -362,7 +363,7 @@ function show() {
   picked = null; answered = false;
   clearMap();
   $("question").innerHTML = `Where is <b>${esc(x.country)}</b>?`;
-  $("cat").textContent = x.region;
+  $("cat").textContent = "";
   $("fact").hidden = true; $("hint").hidden = false;
   const b = $("mainBtn"); b.disabled = true; b.textContent = "Tap a country";
   ease(sel).call(zoom.transform, home());
